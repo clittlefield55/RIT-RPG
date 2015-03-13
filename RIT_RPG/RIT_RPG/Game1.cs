@@ -35,7 +35,7 @@ namespace RIT_RPG
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            //Test Comment: CATS
+
             base.Initialize();
         }
 
