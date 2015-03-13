@@ -1,0 +1,9 @@
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\RIT_RPG.exe
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\RIT_RPG.pdb
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Lidgren.Network.dll
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\MonoGame.Framework.dll
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\OpenTK.dll
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Tao.Sdl.dll
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
+D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
