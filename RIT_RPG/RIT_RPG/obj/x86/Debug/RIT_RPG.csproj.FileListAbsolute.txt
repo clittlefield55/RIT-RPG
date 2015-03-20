@@ -7,3 +7,18 @@ D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Tao.Sdl.dl
 D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache
 D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
 D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\LoadGame.xnb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\RITRPGLogo.xnb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\SpeechMenu.xnb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\NewGame.xnb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\christmas-snow-background.xnb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\RIT_RPG.exe
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\RIT_RPG.pdb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\Selector.xnb
