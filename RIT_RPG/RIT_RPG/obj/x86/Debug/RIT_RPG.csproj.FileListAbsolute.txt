@@ -22,3 +22,6 @@ C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
 C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
 C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache
 C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\Content\Selector.xnb
+D:\Users\kdi4293\Documents\RIT-RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
+D:\Users\kdi4293\Documents\RIT-RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
+D:\Users\kdi4293\Documents\RIT-RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache

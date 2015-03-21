@@ -1,0 +1,18 @@
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.exe.config
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.exe
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.pdb
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.csprojResolveAssemblyReference.cache
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.CharacterEditor.resources
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.Properties.Resources.resources
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.csproj.GenerateResource.Cache
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.exe
+D:\Important Files\College\First Year\Second Semester\IGME-106\Projects\Project 2\Milestone 2\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.pdb
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.exe.config
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.exe
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.pdb
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.exe
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.pdb
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.csprojResolveAssemblyReference.cache
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.CharacterEditor.resources
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.Properties.Resources.resources
+D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.csproj.GenerateResource.Cache

@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="BattleMenu.cs" />
     <Compile Include="Button.cs" />
+    <Compile Include="Character.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Menu.cs" />
