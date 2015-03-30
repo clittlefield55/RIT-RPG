@@ -38,6 +38,12 @@ Wit(Stat Buff): 0
 
 Once again, feedback is appreciated.
 
+v1.5
+-Fixed output to a single line
+v1.4
+-Added line endings
+v1.3
+-Added character level and experience to file output
 v1.2
 -Added character class to file output
 v1.1

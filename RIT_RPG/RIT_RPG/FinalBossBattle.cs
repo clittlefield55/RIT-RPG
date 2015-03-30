@@ -26,12 +26,12 @@ namespace RIT_RPG
         /// <summary>
         /// Final boss battle phase 1, just bierre.
         /// </summary>
-        /// <param name="char1">CoffeeGuy</param>
-        /// <param name="char2">WittyGuy</param>
-        /// <param name="char3">SmartGuy</param>
-        /// <param name="char4">FunnyGuy</param>
+        /// <param name="char1">Smartass Guy</param>
+        /// <param name="char2">Low Jokes Guy</param>
+        /// <param name="char3">Witty Guy</param>
+        /// <param name="char4">Coffee Guy</param>
         /// <param name="prof">Input final boss here</param>
-        public FinalBossBattle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, FinalBoss prof)
+        public FinalBossBattle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, FinalBoss prof)
         {
             c1 = char1;
             c2 = char2;
@@ -43,12 +43,12 @@ namespace RIT_RPG
         /// <summary>
         /// Final Boss Battle Phase 2 tank appears
         /// </summary>
-        /// <param name="char1">CoffeeGuy</param>
-        /// <param name="char2">WittyGuy</param>
-        /// <param name="char3">SmartGuy</param>
-        /// <param name="char4">FunnyGuy</param>
+        /// <param name="char1">Smartass Guy</param>
+        /// <param name="char2">Low Jokes Guy</param>
+        /// <param name="char3">Witty Guy</param>
+        /// <param name="char4">Coffee Guy</param>
         /// <param name="tank">tank boss goes here (Final Boss Object)</param>
-        public FinalBossBattle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, FinalBoss tank)
+        public FinalBossBattle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, FinalBoss tank)
         {
             c1 = char1;
             c2 = char2;
@@ -60,13 +60,13 @@ namespace RIT_RPG
         /// <summary>
         /// final boss phase 3 the FINAL Battle
         /// </summary>
-        /// <param name="char1">Coffee Guy</param>
-        /// <param name="char2">WittyGuy</param>
-        /// <param name="char3">SmartGuy</param>
-        /// <param name="char4">FunnyGuy</param>
+        /// <param name="char1">Smartass Guy</param>
+        /// <param name="char2">Low Jokes Guy</param>
+        /// <param name="char3">Witty Guy</param>
+        /// <param name="char4">Coffee Guy</param>
         /// <param name="prof">bierre goes here</param>
         /// <param name="ta"> insert tyler here</param>
-        public FinalBossBattle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, FinalBoss prof, BossEnemy ta)
+        public FinalBossBattle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, FinalBoss prof, BossEnemy ta)
         {
             c1 = char1;
             c2 = char2;

@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace RIT_RPG
 {
-    //Boss Battles, EX: Dresler or other bosses we want
+    //Boss Battles, EX: Destler or other bosses we want
     class BossBattle : Battle
     {
         //attributes - unique to Boss Fight
@@ -24,12 +24,12 @@ namespace RIT_RPG
         /// <summary>
         /// Creates the Boss battle, usual 4 player characters and 1 boss
         /// </summary>
-        /// <param name="char1">CoffeeGuy</param>
-        /// <param name="char2">WittyGuy</param>
-        /// <param name="char3">SmartGuy</param>
-        /// <param name="char4">FunnyGuy</param>
+        /// <param name="char1">Smartass Guy</param>
+        /// <param name="char2">Low Jokes Guy</param>
+        /// <param name="char3">Witty Guy</param>
+        /// <param name="char4">Coffee Guy</param>
         /// <param name="bossChar"> accepts the bosses into the parameter</param>
-        public BossBattle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, BossEnemy bossChar)
+        public BossBattle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, BossEnemy bossChar)
         {
             //set the variables to their respective variables (final names subject to change)
             c1 = char1;

@@ -23,12 +23,12 @@ namespace RIT_RPG
         /// <summary>
         /// Creates the Tutorial battle at the beginning of the game
         /// </summary>
-        /// <param name="char1">CoffeeGuy</param>
-        /// <param name="char2">WittyGuy</param>
-        /// <param name="char3">SmartGuy</param>
-        /// <param name="char4">FunnyGuy</param>
+        /// <param name="char1">Smartass Guy</param>
+        /// <param name="char2">Low Jokes Guy</param>
+        /// <param name="char3">Witty Guy</param>
+        /// <param name="char4">Coffee Guy</param>
         /// <param name="ta">Put Tyler here</param>
-        public TutorialBattle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, BossEnemy ta)
+        public TutorialBattle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, BossEnemy ta)
         {
             c1 = char1;
             c2 = char2;

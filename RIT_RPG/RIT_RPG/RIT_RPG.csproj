@@ -35,10 +35,25 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Battle.cs" />
+    <Compile Include="BattleMenu.cs" />
+    <Compile Include="BossBattle.cs" />
+    <Compile Include="Button.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="CoffeeGuy.cs" />
+    <Compile Include="FinalBossBattle.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="LoadCharacterMenu.cs" />
+    <Compile Include="LowJokesGuy.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmallMenu.cs" />
+    <Compile Include="SmartassGuy.cs" />
+    <Compile Include="SpeechMenu.cs" />
+    <Compile Include="TutorialBattle.cs" />
+    <Compile Include="WittyGuy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="OpenTK">

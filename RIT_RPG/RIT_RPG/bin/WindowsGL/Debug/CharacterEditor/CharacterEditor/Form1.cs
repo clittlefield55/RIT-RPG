@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO; //Using file input and output
 
-namespace CharacterEditor
+namespace CharacterEditor //Version 1.5
 {
-    public partial class CharacterEditor : Form
+    public partial class CharacterEditor:Form
     {
         public CharacterEditor()
         {
@@ -57,13 +57,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -85,13 +87,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -113,13 +117,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -141,13 +147,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -172,13 +180,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -200,13 +210,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -228,13 +240,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -256,13 +270,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -287,13 +303,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -315,13 +333,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -343,13 +363,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -371,13 +393,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -402,13 +426,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -430,13 +456,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -458,13 +486,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -486,13 +516,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Smartass Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 3); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Smartass Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 3 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -537,13 +569,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -565,13 +599,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -593,13 +629,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -621,13 +659,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -652,13 +692,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -680,13 +722,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -708,13 +752,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -736,13 +782,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -767,13 +815,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -795,13 +845,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -823,13 +875,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -851,13 +905,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -882,13 +938,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -910,13 +968,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -938,13 +998,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -966,13 +1028,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Low Jokes Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Low Jokes Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1017,13 +1081,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1045,13 +1111,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1073,13 +1141,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1101,13 +1171,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1132,13 +1204,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1160,13 +1234,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1188,13 +1264,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1216,13 +1294,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1247,13 +1327,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1275,13 +1357,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1303,13 +1387,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 + 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1331,13 +1417,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1362,13 +1450,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1390,13 +1480,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1418,13 +1510,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1446,13 +1540,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Witty Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor + 3); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Witty Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor + 3 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1497,13 +1593,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1525,13 +1623,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1553,13 +1653,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1581,13 +1683,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 + 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1612,13 +1716,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1640,13 +1746,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5 - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1668,13 +1776,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1696,13 +1806,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence + 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1727,13 +1839,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1755,13 +1869,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1783,13 +1899,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1811,13 +1929,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 + 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1842,13 +1962,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5 - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1870,13 +1992,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence - 5); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence - 5 + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1898,13 +2022,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3 - 5); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 - 5 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created
@@ -1926,13 +2052,15 @@ namespace CharacterEditor
                             {
                                 try //Try to write to the file
                                 {
-                                    fileWriter.WriteLine(CharacterNameTextBox.Text); //Write the character's name
-                                    fileWriter.WriteLine("Coffee Guy"); //Write the character's class
-                                    fileWriter.WriteLine(100 + 5); //Add the character's ego stat
-                                    fileWriter.WriteLine(humor - 5); //Add the character's humor stat
-                                    fileWriter.WriteLine(inteligence); //Add the character's inteligence stat
-                                    fileWriter.WriteLine(energy + 3); //Add the character's energy stat
-                                    fileWriter.WriteLine(wit + 5 - 5); //Add the character's wit stat
+                                    fileWriter.Write(CharacterNameTextBox.Text + ","); //Write the character's name
+                                    fileWriter.Write("Coffee Guy,"); //Write the character's class
+                                    fileWriter.Write(1 + ","); //Add the character's level
+                                    fileWriter.Write(0 + ","); //Add the character's experience points
+                                    fileWriter.Write(100 + 5 + ","); //Add the character's ego stat
+                                    fileWriter.Write(humor - 5 + ","); //Add the character's humor stat
+                                    fileWriter.Write(inteligence + ","); //Add the character's inteligence stat
+                                    fileWriter.Write(energy + 3 + ","); //Add the character's energy stat
+                                    fileWriter.Write(wit + 5 - 5); //Add the character's wit stat
 
                                     WriteProgressBar.Value = 100; //Increment the progress bar
                                     MessageBox.Show("Character created!"); //Tell the user the character has been created

@@ -15,10 +15,10 @@ namespace RIT_RPG
     class Battle
     {
         //attributes
-        protected PlayerChar c1;
-        protected PlayerChar c2;
-        protected PlayerChar c3;
-        protected PlayerChar c4;
+        protected SmartassGuy c1;
+        protected LowJokesGuy c2;
+        protected WittyGuy c3;
+        protected CoffeeGuy c4;
         private List<Enemy> enemies;
 
         //properties
@@ -29,14 +29,14 @@ namespace RIT_RPG
         /// <summary>
         /// Battle with 2 enemies
         /// </summary>
-        /// <param name="char1">CoffeeGuy</param>
-        /// <param name="char2">WittyGuy</param>
-        /// <param name="char3">SmartGuy</param>
-        /// <param name="char4">FunnyGuy</param>
+        /// <param name="char1">Smartass Guy</param>
+        /// <param name="char2">Low Jokes Guy</param>
+        /// <param name="char3">Witty Guy</param>
+        /// <param name="char4">Coffee Guy</param>
         /// <param name="enem1"></param>
         /// <param name="enem2"></param>
         /// <param name="enem3"></param>
-        public Battle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2)
+        public Battle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, Enemy enem1, Enemy enem2)
         {
             c1 = char1;
             c2 = char2;
@@ -56,7 +56,7 @@ namespace RIT_RPG
         /// <param name="enem1"></param>
         /// <param name="enem2"></param>
         /// <param name="enem3"></param>
-        public Battle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2, Enemy enem3)
+        public Battle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, Enemy enem1, Enemy enem2, Enemy enem3)
         {
             c1 = char1;
             c2 = char2;
@@ -77,7 +77,7 @@ namespace RIT_RPG
         /// <param name="enem1"></param>
         /// <param name="enem2"></param>
         /// <param name="enem3"></param>
-        public Battle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2, Enemy enem3, Enemy enem4)
+        public Battle(SmartassGuy char1, LowJokesGuy char2, WittyGuy char3, CoffeeGuy char4, Enemy enem1, Enemy enem2, Enemy enem3, Enemy enem4)
         {
             c1 = char1;
             c2 = char2;

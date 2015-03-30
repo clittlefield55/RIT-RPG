@@ -18,6 +18,32 @@ namespace RIT_RPG
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        KeyboardState kState;
+        MouseState mState;
+
+        #region Game Content
+        int gameWidth = 600; // width of the display window
+        int gameHeight = 480; // height of the display window
+        int buttonWidth = 128;
+        int buttonHeight = 64;
+        int bMenuHeight = 175;
+        Texture2D speechMenuBack; // background for the speech menu
+        Texture2D ritLogo; // game logo
+        Texture2D newButtonFile; // new button texture
+        Texture2D loadButtonFile; // load button texture
+        Texture2D mainBackground; // background for the main menu
+        Texture2D selectorText; // texture for the battle menu's selector
+        Rectangle mouseCursor; // rectangle for clicking on buttons
+        Rectangle logo; // The size and position of the logo;
+        SpriteFont gameFont; // sprite font for the game (possibly tentative)
+        MainMenu titleScreen; // main game screen object
+        BattleMenu bMenu; // battle menu
+        SpeechMenu sBalloon; // speech menu for the character's dialogue
+        Button newButton; // new button drawn to the screen
+        Button loadButton; // load button drawn to the screen
+        enum MenuState {Main, Battle}
+        MenuState gameState = new MenuState();
+        #endregion
 
         public Game1()
             : base()
@@ -37,6 +63,11 @@ namespace RIT_RPG
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            graphics.PreferredBackBufferWidth = gameWidth; // set the width of the game screen to the value entered
+            graphics.PreferredBackBufferHeight = gameHeight; // set the height of the game screen to the value entered
+            graphics.ApplyChanges(); // without this command, the game window won't be resized
+
+            gameState = MenuState.Main;
         }
 
         /// <summary>
@@ -49,6 +80,23 @@ namespace RIT_RPG
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            #region Load Textures
+            ritLogo = Content.Load<Texture2D>("RITRPGLogo");
+            mainBackground = Content.Load<Texture2D>("christmas-snow-background");
+            speechMenuBack = Content.Load<Texture2D>("SpeechMenu");
+            newButtonFile = Content.Load<Texture2D>("NewGame");
+            loadButtonFile = Content.Load<Texture2D>("LoadGame");
+            selectorText = Content.Load<Texture2D>("Selector");
+            gameFont = Content.Load<SpriteFont>("SpriteFont1");
+            #endregion
+
+            #region Create Attributes
+            newButton = new Button(graphics, spriteBatch, new Vector2((gameWidth/2) - (buttonWidth / 2), gameHeight - 175), newButtonFile, buttonWidth, buttonHeight);
+            loadButton = new Button(graphics, spriteBatch, new Vector2((gameWidth / 2) - (buttonWidth / 2), newButton.Position.Y + buttonHeight + 20), loadButtonFile, buttonWidth, buttonHeight);
+            titleScreen = new MainMenu(graphics, spriteBatch, mainBackground, ritLogo, new Vector2(0, 0), gameHeight, gameWidth, newButton, loadButton);
+            bMenu = new BattleMenu(graphics, spriteBatch, gameFont, speechMenuBack, selectorText, new Vector2(0, gameHeight - bMenuHeight), bMenuHeight, gameWidth);
+            sBalloon = new SpeechMenu(graphics, spriteBatch, gameFont, speechMenuBack, new Vector2(0, gameHeight - bMenuHeight), bMenuHeight, gameWidth);
+            #endregion
         }
 
         /// <summary>
@@ -71,6 +119,26 @@ namespace RIT_RPG
                 Exit();
 
             // TODO: Add your update logic here
+            IsMouseVisible = true; // mouse is always visible
+            mState = Mouse.GetState();
+            // set a teeny tiny rectangle to follow the mouse's cursor
+            mouseCursor = new Rectangle(mState.Position.X, mState.Position.Y, 1, 1);
+
+            switch (gameState)
+            {
+                case MenuState.Main:
+                    // go to battle mode if the new game button is clicked
+                    if(mState.LeftButton == ButtonState.Pressed && mouseCursor.Intersects(newButton.ButtonBox))
+                    {
+                        gameState = MenuState.Battle;
+                    }
+                    break;
+                case MenuState.Battle:
+                    bMenu.ProcessInput(); // this method handles the keyboard input for the battle menu
+                    break;
+                default:
+                    break;
+            }
 
             base.Update(gameTime);
         }
@@ -84,6 +152,20 @@ namespace RIT_RPG
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            switch (gameState)
+            {
+                case MenuState.Main:
+                    titleScreen.DrawMenu();
+                    break;
+                case MenuState.Battle:
+                    // add the drawing code for other elements of the battle here
+                    bMenu.DrawMenu();
+                    break;
+                default:
+                    break;
+            }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
