@@ -23,6 +23,7 @@ namespace RIT_RPG
         protected Button button2;
         protected Button button3;
 
+        // no button overload
         public MainMenu(GraphicsDeviceManager gr, SpriteBatch sp, Texture2D bak, Texture2D gLogo, Vector2 pos, int ht, int wd)
             : base(gr, sp, bak, pos, ht, wd)
         {
@@ -33,6 +34,7 @@ namespace RIT_RPG
             logo = new Rectangle(center - (logoWidth / 2), 40, logoWidth, logoHeight);
         }
 
+        // one button overload
         public MainMenu(GraphicsDeviceManager gr, SpriteBatch sp, Texture2D bak, Texture2D gLogo, Vector2 pos, int ht, int wd, Button b1)
             : base(gr, sp, bak, pos, ht, wd)
         {
@@ -44,6 +46,7 @@ namespace RIT_RPG
             button1 = b1;
         }
 
+        // two button overload
         public MainMenu(GraphicsDeviceManager gr, SpriteBatch sp, Texture2D bak, Texture2D gLogo, Vector2 pos, int ht, int wd, Button b1, Button b2)
             : base(gr, sp, bak, pos, ht, wd)
         {
@@ -56,6 +59,7 @@ namespace RIT_RPG
             button2 = b2;
         }
 
+        // three button overload
         public MainMenu(GraphicsDeviceManager gr, SpriteBatch sp, Texture2D bak, Texture2D gLogo, Vector2 pos, int ht, int wd, Button b1, Button b2, Button b3)
             : base(gr, sp, bak, pos, ht, wd)
         {
@@ -74,6 +78,8 @@ namespace RIT_RPG
             base.DrawMenu();
             sprite.Draw(ritLogo, logo, Color.White);
 
+            // some of the overloaded methods have buttons assigned to them, 
+            // these if statements only draw the buttons if something is actually assigned to them.
             if(button1 != null)
             {
                 button1.DrawButton();

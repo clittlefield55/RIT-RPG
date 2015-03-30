@@ -16,3 +16,6 @@ D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEd
 D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.CharacterEditor.resources
 D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.Properties.Resources.resources
 D:\Users\kdi4293\Downloads\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.csproj.GenerateResource.Cache
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\CharacterEditor\CharacterEditor\bin\Debug\CharacterEditor.exe.config
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.exe
+C:\Users\Christopher\Documents\RIT RPG\RIT_RPG\RIT_RPG\bin\WindowsGL\Debug\CharacterEditor\CharacterEditor\obj\Debug\CharacterEditor.pdb

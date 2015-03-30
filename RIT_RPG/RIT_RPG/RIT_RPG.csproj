@@ -35,9 +35,11 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Battle.cs" />
     <Compile Include="BattleMenu.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="FinalBossBattle.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Menu.cs" />
@@ -91,6 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Selector.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\SpriteFont1.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

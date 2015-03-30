@@ -20,6 +20,7 @@ namespace RIT_RPG
         protected PlayerChar c3;
         protected PlayerChar c4;
         private List<Enemy> enemies;
+        private BattleMenu menu;
 
         //properties
 
@@ -36,7 +37,7 @@ namespace RIT_RPG
         /// <param name="enem1"></param>
         /// <param name="enem2"></param>
         /// <param name="enem3"></param>
-        public Battle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2)
+        public Battle(BattleMenu bM, CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2)
         {
             c1 = char1;
             c2 = char2;
@@ -44,6 +45,7 @@ namespace RIT_RPG
             c4 = char4;
             enemies.Add(enem1);
             enemies.Add(enem2);
+            menu = bM;
         }
 
         /// <summary>
@@ -56,7 +58,7 @@ namespace RIT_RPG
         /// <param name="enem1"></param>
         /// <param name="enem2"></param>
         /// <param name="enem3"></param>
-        public Battle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2, Enemy enem3)
+        public Battle(BattleMenu bM, CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2, Enemy enem3)
         {
             c1 = char1;
             c2 = char2;
@@ -65,6 +67,7 @@ namespace RIT_RPG
             enemies.Add(enem1);
             enemies.Add(enem2);
             enemies.Add(enem3);
+            menu = bM;
         }
 
         /// <summary>
@@ -77,7 +80,7 @@ namespace RIT_RPG
         /// <param name="enem1"></param>
         /// <param name="enem2"></param>
         /// <param name="enem3"></param>
-        public Battle(CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2, Enemy enem3, Enemy enem4)
+        public Battle(BattleMenu bM, CoffeeGuy char1, WittyGuy char2, SmartGuy char3, FunnyGuy char4, Enemy enem1, Enemy enem2, Enemy enem3, Enemy enem4)
         {
             c1 = char1;
             c2 = char2;
@@ -87,6 +90,7 @@ namespace RIT_RPG
             enemies.Add(enem2);
             enemies.Add(enem3);
             enemies.Add(enem4);
+            menu = bM;
         }
 
         //Methods
@@ -98,7 +102,24 @@ namespace RIT_RPG
             //check if players or enemies are dead
             
             //check if Battle is over or Game Over
+            //if(c1.Ego == 0 && c2.Ego == 0 && c3.Ego == 0 && c4.Ego == 0)
+            //{
+                  //this.GameOver();
+            //}
             
+            //int deadEnemyCount = 0 // set up a count of enemies that have died
+            //foreach(Enemy e in enemies)
+            //{
+            //    if(e.Health == 0)
+            //    {
+            //        deadEnemyCount++;
+            //    }
+            //}
+            //
+            //if(deadEnemyCount == enemies.Length)
+            //{
+            //    this.EndBattle();
+            //}
         //}
         //commented out
 
@@ -112,6 +133,7 @@ namespace RIT_RPG
             // inside loop determine who goes first based on speed
 
             // if player characters go first then call methods depending on selection inside the battle menu
+            menu.ProcessInput();
 
             // if enemys go first then they randomly target a player character and call appropriate method
 
@@ -126,6 +148,7 @@ namespace RIT_RPG
             //Draw Background 
 
             //Draw menu
+            menu.DrawMenu();
             
             //Draw Enemies and player characters
         }

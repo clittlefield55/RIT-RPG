@@ -16,17 +16,19 @@ namespace RIT_RPG
     {
         SpriteFont font;
         string text;
+
         public SpeechMenu(GraphicsDeviceManager gr, SpriteBatch sp, SpriteFont ft, Texture2D bak, Vector2 pos, int ht, int wd):base(gr,sp,bak,pos,ht,wd)
         {
             font = ft;
         }
 
-        // When character classes have been added, uncomment this method
-        /*public void Talk(Character ch, string tx)
+        public void Talk(Character ch, string tx)
         {
-            text = ch.Name + ": " + tx
-            base.DrawMenu();
-            sprite.DrawString(font, text, new Vector2((int)position.X + 20, (int)position.Y + 20), Color.White);
-        }*/
+            text = ch.Name + ": " + tx; // put the character's name and quote into one text string
+            base.DrawMenu(); // call the SmallMenu's DrawMenu
+            
+            // this command may need to be improved upon to write multiple lines of the text attribute
+            sprite.DrawString(font, text, new Vector2((int)position.X + 20, (int)position.Y + 20), Color.White); // use the spritefont to write out the completed text
+        }
     }
 }

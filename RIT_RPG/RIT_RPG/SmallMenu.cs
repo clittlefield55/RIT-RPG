@@ -11,7 +11,8 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace RIT_RPG
 {
-    class SmallMenu:Menu
+    // this class is abstract, it is not meant to be created as an object (Create BattleMenu and SpeechMenu objects instead)
+    abstract class SmallMenu:Menu
     {
         public SmallMenu(GraphicsDeviceManager gr, SpriteBatch sp, Texture2D bak, Vector2 pos, int ht, int wd):base(gr, sp, bak, pos, ht, wd)
         {

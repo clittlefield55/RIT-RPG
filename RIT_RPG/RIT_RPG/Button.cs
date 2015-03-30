@@ -13,13 +13,13 @@ namespace RIT_RPG
 {
     class Button
     {
-        GraphicsDeviceManager graph;
-        SpriteBatch sprite;
-        int width;
-        int height;
-        Texture2D butTex;
-        Vector2 position;
-        Rectangle buttonBox;
+        GraphicsDeviceManager graph; // required for button objects to be drawn
+        SpriteBatch sprite; // also required for button objects to be drawn
+        int width; // width of button
+        int height; // height of button
+        Texture2D butTex; // button texture
+        Vector2 position; // upper left button position
+        Rectangle buttonBox; // rectangled used for clicking buttons with cursor
 
         public Button(GraphicsDeviceManager gr, SpriteBatch sp, Vector2 pos, Texture2D tex, int wd, int ht)
         {
@@ -32,6 +32,7 @@ namespace RIT_RPG
             buttonBox = new Rectangle((int)position.X, (int)position.Y, width, height);
         }
 
+        // attributes
         public Vector2 Position
         {
             get { return position; }
