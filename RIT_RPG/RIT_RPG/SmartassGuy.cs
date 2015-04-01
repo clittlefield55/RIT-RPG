@@ -74,5 +74,11 @@ namespace RIT_RPG
         {
             throw new NotImplementedException();
         }
+
+        public override void TakeDamage(int damageTaken) //Updates the character's health in battle
+        {
+            damage += damageTaken; //Update the amount of damage on the character
+            egoInBattle = ego - damage; //Give the player their current ego
+        }
     }
 }

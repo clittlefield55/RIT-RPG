@@ -24,6 +24,8 @@ namespace RIT_RPG
         protected int inteligence; //Inteligence (defense) stat
         protected int energy; //Energy (speed) stat
         protected int wit; //Wit (buff) stat
+        protected int egoInBattle; //Ego stat when the player is in battle
+        protected int damage; //Damage the character takes in battle
         #endregion
 
         public Character(string fileName) //Constructor
@@ -157,50 +159,58 @@ namespace RIT_RPG
         }
 
         #region Properties
-        public string Name
+        public string Name //Name property
         {
             get { return name; }
-            set { name = value; }
         }
-        public string CharacterClass
+        public string CharacterClass //CharacterClass property
         {
             get { return characterClass; }
-            set { characterClass = value; }
         }
-        public int Level
+        public int Level //Level property
         {
             get { return level; }
             set { level = value; }
         }
-        public int Exp
+        public int Exp //Exp property
         {
             get { return exp; }
             set { exp = value; }
         }
-        public int Ego
+        public int Ego //Ego property
         {
             get { return ego; }
             set { ego = value; }
         }
-        public int Humor
+        public int Humor //Humor property
         {
             get { return humor; }
             set { humor = value; }
         }
-        public int Inteligence
+        public int Inteligence //Inteligence property
         {
             get { return inteligence; }
             set { inteligence = value; }
         }
-        public int Energy
+        public int Energy //Energy property
         {
             get { return energy; }
             set { energy = value; }
         }
-        public int Wit
+        public int Wit //Wit property
         {
             get { return wit; }
             set { wit = value; }
+        }
+        public int EgoInBattle //EgoInBattle property
+        {
+            get { return egoInBattle; }
+            set { egoInBattle = value; }
+        }
+        public int Damage //Damage property
+        {
+            get { return damage; }
+            set { damage = value; }
         }
         #endregion
 
@@ -209,5 +219,9 @@ namespace RIT_RPG
         public abstract void LevelUp(); //Handles character levelup
 
         public abstract void Insult(); //Character attack method
+
+        public abstract void TakeDamage(int damageTaken); //Updates the player's health in battle
+        
+        //Add Draw()
     }
 }

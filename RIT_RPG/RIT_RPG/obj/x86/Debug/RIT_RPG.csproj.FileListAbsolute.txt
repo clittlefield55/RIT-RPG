@@ -10,3 +10,6 @@ D:\Users\kdi4293\Downloads\GitHub\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
 D:\Users\kdi4293\Documents\RIT-RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
 D:\Users\kdi4293\Documents\RIT-RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.pdb
 D:\Users\kdi4293\Documents\RIT-RPG\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache
+C:\Users\IDZIK-LAPTOP\Downloads\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe
+C:\Users\IDZIK-LAPTOP\Downloads\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.csprojResolveAssemblyReference.cache
+D:\Users\kdi4293\Downloads\RIT_RPG\RIT_RPG\obj\x86\Debug\RIT_RPG.exe

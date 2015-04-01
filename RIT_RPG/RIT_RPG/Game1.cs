@@ -43,6 +43,13 @@ namespace RIT_RPG
         Button loadButton; // load button drawn to the screen
         enum MenuState {Main, Battle}
         MenuState gameState = new MenuState();
+        #region Character Objects
+        SmartassGuy SAG = new SmartassGuy("smartassGuy.bin"); //SmartassGuy object
+        LowJokesGuy LJG = new LowJokesGuy("lowjokesGuy.bin"); //LowJokesGuy object
+        WittyGuy WG = new WittyGuy("wittyGuy.bin"); //WittyGuy object
+        CoffeeGuy CG = new CoffeeGuy("coffeeGuy.bin"); //CoffeeGuy object
+        //Add player.Damage = 0; after the battle is called to end
+        #endregion
         #endregion
 
         public Game1()

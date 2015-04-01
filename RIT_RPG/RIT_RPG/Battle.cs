@@ -23,7 +23,6 @@ namespace RIT_RPG
 
         //properties
 
-
         //Constructors
 
         /// <summary>
